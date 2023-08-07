@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "5236832e-4508-4468-a9e8-aecb1dac20ad",
+		"name": "Assignment_9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26559195"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/user/deleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "softDeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/user/softDeleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"softDeleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"ali\",\r\n    \"age\" : 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePass",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"ali\",\r\n    \"age\" : 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/updateUser/64ae0d81335a90f6cd7a0b0e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"updateUser",
+								"64ae0d81335a90f6cd7a0b0e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profileImage",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "felix5gadeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFnZHkiLCJpZCI6IjY0YmY5NjRiMzg0MDM2NmQ0Nzc1YzE4ZiIsImlzTG9naW4iOnRydWUsImlhdCI6MTY5MDI3NzQ5NiwiZXhwIjoxNjkwMjgxMDk2fQ.GXURVoBIRZs8avsA4FXeoEH0yl2mphzSG_Zrra_faOU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Iphone/202302__/IMG_4553.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/profile/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"profile",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profileImageCloud",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "felix5gadeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFnZHkiLCJpZCI6IjY0YmY5NjRiMzg0MDM2NmQ0Nzc1YzE4ZiIsImlzTG9naW4iOnRydWUsImlhdCI6MTY5MDI3NzQ5NiwiZXhwIjoxNjkwMjgxMDk2fQ.GXURVoBIRZs8avsA4FXeoEH0yl2mphzSG_Zrra_faOU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Iphone/202302__/IMG_4553.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/profile/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"profile",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profileCoverImage",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "felix5gadeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFnZHkiLCJpZCI6IjY0YmY5NjRiMzg0MDM2NmQ0Nzc1YzE4ZiIsImlzTG9naW4iOnRydWUsImlhdCI6MTY5MDI3NzQ5NiwiZXhwIjoxNjkwMjgxMDk2fQ.GXURVoBIRZs8avsA4FXeoEH0yl2mphzSG_Zrra_faOU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Iphone/202302__/IMG_4553.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/profile/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"profile",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profileCoverImageCloud",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "felix5gadeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFnZHkiLCJpZCI6IjY0YmY5NjRiMzg0MDM2NmQ0Nzc1YzE4ZiIsImlzTG9naW4iOnRydWUsImlhdCI6MTY5MDI3NzQ5NiwiZXhwIjoxNjkwMjgxMDk2fQ.GXURVoBIRZs8avsA4FXeoEH0yl2mphzSG_Zrra_faOU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Iphone/202302__/IMG_4553.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/profile/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"profile",
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task",
+			"item": [
+				{
+					"name": "addTask",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"any\",\r\n    \"description\" : \"thing\",\r\n    \"status\" : \"toDo\",\r\n    \"userId\" : \"64adf81797e517418d689b98\",\r\n    \"assignTo\" : \"no\",\r\n    \"deadLine\" : \"Monday\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/task/addTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"task",
+								"addTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTask",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/task/updateTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"task",
+								"updateTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllTasksAndUsers",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTask",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/task/deleteTask/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"task",
+								"deleteTask",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTasksOfOneUserAuth",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "getTasksOfOneUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/task/getTasksOfOneUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"task",
+								"getTasksOfOneUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllTasksWithDeadLine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/task/getTasksOfOneUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"task",
+								"getTasksOfOneUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"magdy\",\r\n    \"email\" : \"magdy@gmail.com\",\r\n    \"password\" : \"1234\",\r\n    \"age\" : \"21\",\r\n    \"gender\" : \"Male\",\r\n    \"phone\" : \"11111\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\" : \"magdy\",\r\n    \"email\" : \"magdy@gmail.com\",\r\n    \"password\" : \"1234\",\r\n    \"age\" : \"21\",\r\n    \"gender\" : \"Male\",\r\n    \"phone\" : \"11111\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/user/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logOut",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "confirmEmail",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "forgetPassword",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "felix5gadeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFnZHkiLCJpZCI6IjY0YmUxMzlkMmMyNjEzMWZhMDEzNGVhMSIsImlzTG9naW4iOnRydWUsImlhdCI6MTY5MDE3ODQ3OCwiZXhwIjoxNjkwMTgyMDc4fQ.QbmCv6AEPHcC-uqhZjrU83QIgykG0JnjhWsUnfZM2hw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"magdibadr2002@gmail.com\",\r\n    \"phone\" : \"1111\",\r\n    \"password\" :\"12adsafdsfsdfF\",\r\n    \"cPassword\" : \"12adsafdsfsdfF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/Auth/forgetPass",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"Auth",
+								"forgetPass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirmForget",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "authorization",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1pciIsImlkIjoiNjRiMWY4MDA4YmM0ZmU1M2EwMjA4OThkIiwiaWF0IjoxNjg5Mzg1MDkyLCJleHAiOjE2ODkzODg2OTJ9.6fwoAIDDL40NF3EPVMLwsBSbaxQ3li2I0F6cYv61oC4"
+		},
+		{
+			"key": "auth",
+			"value": "asf"
+		}
+	]
+}
